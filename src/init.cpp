@@ -14,6 +14,7 @@
 #endif
 
 #include "init.h"
+#include "context.h"
 
 #include "activemasternode.h"
 #include "addrman.h"
@@ -340,6 +341,12 @@ static void registerSignalHandler(int signal, void(*handler)(int))
     sigaction(signal, &sa, nullptr);
 }
 #endif
+
+bool static InitInformation(const std::string& str)
+{
+    uiInterface.ThreadSafeMessageBox(str, "", CClientUIInterface::MSG_INFORMATION);
+    return true;
+}
 
 bool static Bind(CConnman& connman, const CService& addr, unsigned int flags)
 {
@@ -773,6 +780,40 @@ bool AppInitBasicSetup()
 
     if (!SetupNetworking())
         return UIError("Error: Initializing networking failed");
+
+    BootstrapModelPtr model = GetContext().GetBootstrapModel();
+
+    // Check if we should run stage II of the blockchain bootstrap
+    if (model->RunStageIIPrepared()) {
+        InitInformation("Bootstrap option detected, running stage II of bootstrap...");
+
+        std::string err;
+        if (!model->RunStageII(err)) {
+            error("%s : %s", __func__, err);
+            return InitError(err);
+        }
+
+        if (!model->IsLatestRunSuccess(err)) {
+            error("%s : %s", __func__, err);
+            return InitError(err);
+        }
+
+        if (model->IsConfigMerged()) {
+            try {
+                InitInformation("Reloading configuration file...");
+                ReadConfigFile(mapArgs, mapMultiArgs);
+            } catch (const std::exception& e) {
+                std::string err = strprintf("Error: Cannot parse configuration file: %s (%s). Only use key=value syntax. File: %s", e.what(), __func__, GetConfigFile().string());
+                return InitError(err);
+            }
+        }
+
+        InitInformation("Stage II completed.");
+    } else {
+        std::string err;
+        if (!model->CleanUp(err))
+            error("%s : %s", __func__, err); // print to log and continue
+    }
 
 #ifndef WIN32
     if (GetBoolArg("-sysperms", false)) {

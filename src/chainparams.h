@@ -99,6 +99,9 @@ protected:
  */
 const CChainParams& Params();
 
+/** Return whether network params are selected or not. */
+bool ParamsSelected();
+
 /** Return parameters for the given network. */
 CChainParams& Params(CBaseChainParams::Network network);
 
@@ -115,5 +118,22 @@ bool SelectParamsFromCommandLine();
  * Allows modifying the network upgrade regtest parameters.
  */
 void UpdateNetworkUpgradeParameters(Consensus::UpgradeIndex idx, int nActivationHeight);
+
+/**
+ * Return approximate blockchain size on disk, in Gb.
+ * Minimum free space (in bytes) needed for data directory.
+ */
+uint64_t GetBlockChainSize();
+
+/**
+ * @brief Check if genesis block in the given datadir has correct hash.
+ *        Compare first block from blk0000.dat in the given datadir against genesisHash.
+ *
+ * @param datadir full path to the data directory
+ * @param genesisHash hash of the genesis block
+ * @param err description of the problem
+ * @return true - ok, false - failed
+ */
+bool VerifyGenesisBlock(const std::string& datadir, const uint256& genesisHash, std::string& err);
 
 #endif // BITCOIN_CHAINPARAMS_H
