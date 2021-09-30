@@ -264,6 +264,7 @@ public:
 
         vFixedSeeds = std::vector<SeedSpec6>(pnSeed6_main, pnSeed6_main + ARRAYLEN(pnSeed6_main));
         //convertSeed6(vFixedSeeds, pnSeed6_main, ARRAYLEN(pnSeed6_main)); // added
+        strBootstrapUrl = "https://explorer.decenomy.net/__DSW__/bootstrap.zip";
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const
