@@ -168,7 +168,8 @@ QString Intro::getDefaultDataDirectory()
     return GUIUtil::boostPathToQString(GetDefaultDataDir());
 }
 
-bool Intro::pickDataDirectory()
+//bool Intro::pickDataDirectory()
+bool Intro::pickDataDirectory(bool& bootstrap)
 {
     QSettings settings;
     /* If data directory provided on command line, no need to look at settings
@@ -193,6 +194,7 @@ bool Intro::pickDataDirectory()
                 return false;
             }
             dataDir = intro.getDataDirectory();
+            bootstrap = intro.getBootstrapOption();
             try {
                 TryCreateDirectory(GUIUtil::qstringToBoostPath(dataDir));
                 break;
@@ -305,6 +307,11 @@ void Intro::checkPath(const QString& dataDir)
         Q_EMIT requestCheck();
     }
     mutex.unlock();
+}
+
+bool Intro::getBootstrapOption() const
+{
+    return ui->bootstrapBlockchain->isChecked();
 }
 
 QString Intro::getPathToCheck()

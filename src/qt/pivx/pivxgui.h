@@ -31,6 +31,7 @@ class ClientModel;
 class NetworkStyle;
 class Notificator;
 class WalletModel;
+class BootstrapDialog;
 
 
 /**
@@ -120,6 +121,7 @@ private:
     // Actions
     QAction* quitAction = nullptr;
     QAction* toggleHideAction = nullptr;
+    QAction* openBootstrapAction;
 
 
     // Frame
@@ -142,6 +144,7 @@ private:
     QSystemTrayIcon* trayIcon = nullptr;
     QMenu* trayIconMenu = nullptr;
     Notificator* notificator = nullptr;
+    BootstrapDialog* bootstrapWindow = nullptr;
 
     QLabel *op = nullptr;
     bool opEnabled = false;

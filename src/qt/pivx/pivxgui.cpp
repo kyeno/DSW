@@ -41,6 +41,7 @@ const QString PIVXGUI::DEFAULT_WALLET = "~Default";
 
 PIVXGUI::PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent) :
         QMainWindow(parent),
+        bootstrapWindow(0),
         clientModel(0){
 
     /* Open CSS when configured */
@@ -143,6 +144,7 @@ PIVXGUI::PIVXGUI(const NetworkStyle* networkStyle, QWidget* parent) :
         // When compiled without wallet or -disablewallet is provided,
         // the central widget is the rpc console.
         rpcConsole = new RPCConsole(enableWallet ? this : 0);
+        bootstrapWindow = new BootstrapDialog(GetContext().GetBootstrapModel(), this);
         setCentralWidget(rpcConsole);
     }
 
@@ -176,6 +178,11 @@ void PIVXGUI::createActions(const NetworkStyle* networkStyle)
 
     connect(toggleHideAction, &QAction::triggered, this, &PIVXGUI::toggleHidden);
     connect(quitAction, &QAction::triggered, qApp, &QApplication::quit);
+    connect(openBootstrapAction, SIGNAL(triggered()), bootstrapWindow, SLOT(show()));
+    connect(quitAction, SIGNAL(triggered()), bootstrapWindow, SLOT(hide()));
+    openBootstrapAction = new QAction(QIcon(":/icons/options"), tr("&Blockchain Bootstrap"), this);
+    openBootstrapAction->setStatusTip(tr("Reload blockchain from the cloud or file"));
+    tools->addAction(openBootstrapAction);
 }
 
 /**
@@ -295,6 +302,7 @@ void PIVXGUI::createTrayIconMenu()
 
     // Configuration of the tray icon (or Dock icon) icon menu
     trayIconMenu->addAction(toggleHideAction);
+    trayIconMenu->addAction(openBootstrapAction);
     trayIconMenu->addSeparator();
 
 #ifndef Q_OS_MAC // This is built-in on macOS

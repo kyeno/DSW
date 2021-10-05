@@ -398,6 +398,16 @@
               </item>
              </layout>
             </item>
+           <item>
+            <widget class="QCheckBox" name="bootstrapBlockchain">
+             <property name="text">
+              <string>Bootstrap from the cloud (wallet syncs with network much faster)</string>
+             </property>
+             <property name="checked">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
             <item>
              <spacer name="verticalSpacer">
               <property name="orientation">
