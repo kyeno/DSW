@@ -372,7 +372,7 @@ void BootstrapModel::RunFromFileThread()
     NotifyModelChanged(); /** model running state changed */
 
     std::string thName = strprintf("galilel-%s", __func__);
-    RenameThread(thName.c_str());
+    util::ThreadRename(thName.c_str());
     LogPrintf("%s thread start\n", thName);
 
     try {
@@ -398,7 +398,7 @@ void BootstrapModel::RunFromCloudThread()
     NotifyModelChanged(); /** model running state changed */
 
     std::string thName = strprintf("galilel-%s", __func__);
-    RenameThread(thName.c_str());
+    util::ThreadRename(thName.c_str());
     LogPrintf("%s thread start\n", thName);
 
     try {
@@ -424,7 +424,7 @@ void BootstrapModel::RunStageIIThread()
     NotifyModelChanged(); /** model running state changed */
 
     std::string thName = strprintf("galilel-%s", __func__);
-    RenameThread(thName.c_str());
+    util::ThreadRename(thName.c_str());
     LogPrintf("%s thread start\n", thName);
 
     try {
@@ -644,7 +644,7 @@ bool BootstrapModel::VerifyBootstrapFolder(const boost::filesystem::path& bootst
 
 bool BootstrapModel::VerifyNetworkType(const boost::filesystem::path& bootstrapDir, std::string& err) const
 {
-    if (!VerifyGenesisBlock(bootstrapDir.string(), Params().HashGenesisBlock(), err)) {
+    if (!VerifyGenesisBlock(bootstrapDir.string(), Params().hashGenesisBlock(), err)) {
         err = strprintf("Bootstrap verification failed with reason: %s", err);
         return error("%s : %s", __func__, err);
     } else {

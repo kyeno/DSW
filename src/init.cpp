@@ -19,6 +19,7 @@
 #include "activemasternode.h"
 #include "addrman.h"
 #include "amount.h"
+#include "bootstrap/bootstrapmodel.h"
 #include "checkpoints.h"
 #include "compat/sanity.h"
 #include "consensus/upgrades.h"
@@ -792,19 +793,19 @@ bool AppInitBasicSetup()
             if (!bootstrapPath.empty()) {
                 if (!model->SetBootstrapMode(BootstrapMode::file, err)) {
                     error("%s : %s", __func__, err);
-                    return InitError(err);
+                    return UIError("Error");
                 }
 
                 if (!model->SetBootstrapFilePath(bootstrapPath, err)){
                     error("%s : %s", __func__, err);
-                    return InitError(err);
+                    return UIError("Error");
                 }
             }
 
             // run task
             if (!model->RunStageIPossible(err) || !model->RunStageI(err)) {
                 error("%s : %s", __func__, err);
-                return InitError(err);
+                return UIError("Error");
             }
 
             // show progress of downloading file from the cloud
@@ -822,13 +823,13 @@ bool AppInitBasicSetup()
             // wait task to complete
             if (!model->IsLatestRunSuccess(err)) {
                 error("%s : %s", __func__, err);
-                return InitError(err);
+                return UIError(err);
             }
 
             InitInformation("Stage I completed.");
         } catch (const std::exception& e) {
             error("%s : %s", __func__, e.what());
-            return InitError(e.what());
+            return UIError(e.what());
         }
     }
 
@@ -839,12 +840,12 @@ bool AppInitBasicSetup()
         std::string err;
         if (!model->RunStageII(err)) {
             error("%s : %s", __func__, err);
-            return InitError(err);
+            return UIError(err);
         }
 
         if (!model->IsLatestRunSuccess(err)) {
             error("%s : %s", __func__, err);
-            return InitError(err);
+            return UIError(err);
         }
 
         if (model->IsConfigMerged()) {
@@ -853,7 +854,7 @@ bool AppInitBasicSetup()
                 ReadConfigFile(mapArgs, mapMultiArgs);
             } catch (const std::exception& e) {
                 std::string err = strprintf("Error: Cannot parse configuration file: %s (%s). Only use key=value syntax. File: %s", e.what(), __func__, GetConfigFile().string());
-                return InitError(err);
+                return UIError(err);
             }
         }
 

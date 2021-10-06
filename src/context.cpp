@@ -30,7 +30,7 @@
 #include <stdexcept>
 
 static std::unique_ptr<CContext> context_;
-static CCriticalSection csUpdate_;
+static RecursiveMutex csUpdate_;
 
 void CreateContext()
 {
