@@ -57,6 +57,7 @@ public:
     const Consensus::Params& GetConsensus() const { return consensus; }
     const CMessageHeader::MessageStartChars& MessageStart() const { return pchMessageStart; }
     int GetDefaultPort() const { return nDefaultPort; }
+    const uint256& HashGenesisBlock() const { return consensus.hashGenesisBlock; }
 
     const CBlock& GenesisBlock() const { return genesis; }
 

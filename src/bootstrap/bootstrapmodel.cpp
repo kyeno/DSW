@@ -644,7 +644,7 @@ bool BootstrapModel::VerifyBootstrapFolder(const boost::filesystem::path& bootst
 
 bool BootstrapModel::VerifyNetworkType(const boost::filesystem::path& bootstrapDir, std::string& err) const
 {
-    if (!VerifyGenesisBlock(bootstrapDir.string(), Params().hashGenesisBlock(), err)) {
+    if (!VerifyGenesisBlock(bootstrapDir.string(), Params().HashGenesisBlock(), err)) {
         err = strprintf("Bootstrap verification failed with reason: %s", err);
         return error("%s : %s", __func__, err);
     } else {
