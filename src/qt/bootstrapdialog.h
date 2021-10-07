@@ -70,7 +70,7 @@ private:
     void updateUI();
     bool cancel();
 
-private slots:
+private Q_SLOTS:
     void onButtonSelectFile();
     void onButtonRun();
     void onButtonHide();

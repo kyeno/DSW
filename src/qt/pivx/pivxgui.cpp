@@ -9,6 +9,7 @@
 #include "macdockiconhandler.h"
 #endif
 
+#include "context.h"
 #include "qt/guiutil.h"
 #include "clientmodel.h"
 #include "optionsmodel.h"
@@ -21,6 +22,8 @@
 
 #include "init.h"
 #include "util.h"
+#include "bootstrapdialog.h"
+#include "bootstrap/bootstrapmodel.h"
 
 #include <QApplication>
 #include <QColor>
