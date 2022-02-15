@@ -140,6 +140,7 @@ TopBar::TopBar(PIVXGUI* _mainWindow, QWidget* parent) : PWidget(_mainWindow, par
     connect(ui->pushButtonSync, &ExpandableButton::Mouse_Pressed, [this]() { window->goToSettingsInfo(); });
     connect(ui->pushButtonConsole, &ExpandableButton::Mouse_Pressed, [this]() { window->goToDebugConsole(); });
     connect(ui->pushButtonConnection, &ExpandableButton::Mouse_Pressed, [this]() { window->showPeers(); });
+    connect(ui->pushButtonStack, &ExpandableButton::Mouse_Pressed, this, &TopBar::onStakingBtnClicked);
 
     refreshStatus();
 }
@@ -754,4 +755,17 @@ void TopBar::onError(QString error, int type)
     if (type == REQUEST_UPGRADE_WALLET) {
         warn(tr("Upgrade Wallet Error"), error);
     }
+}
+
+void TopBar::onStakingBtnClicked()
+{
+    if (walletModel->isStakingStatusActive()) {
+        ask("Confirm your choice", "Do you really want to DISABLE staking?\n");
+        return;
+    }
+    else {
+        ask("Confirm your choice", "Do you really want to ENABLE staking?\n");
+        return;
+    }
+
 }
