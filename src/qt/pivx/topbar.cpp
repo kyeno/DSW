@@ -621,6 +621,7 @@ void TopBar::refreshMasternodeStatus()
             ui->labelNextCollateralBlocks->setText(tr("%1 Blocks").arg(p.first));
         }
     }
+    if (fStaking) std::cout << "Staking enabled" << std::endl;
 }
 
 void TopBar::refreshStatus()
@@ -759,12 +760,11 @@ void TopBar::onError(QString error, int type)
 
 void TopBar::onStakingBtnClicked()
 {
-    if (walletModel->isStakingStatusActive()) {
+    if (fStaking) {
         ask("Confirm your choice", "Do you really want to DISABLE staking?\n");
         return;
     }
     else {
-        ask("Confirm your choice", "Do you really want to ENABLE staking?\n");
         return;
     }
 

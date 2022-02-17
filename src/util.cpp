@@ -92,6 +92,8 @@ const char * const PIVX_ACTIVE_MASTERNODE_CONF_FILENAME = "activemasternode.conf
 // Kyanite only features
 // Masternode
 bool fMasterNode = false;
+bool fStaking = false;
+bool fStakingActive = false;
 bool fLiteMode = false;
 
 /** Spork enforcement enabled time */

@@ -42,6 +42,8 @@ extern const char * const DEFAULT_DEBUGLOGFILE;
 //KYAN only features
 
 extern bool fMasterNode;
+extern bool fStaking;
+extern bool fStakingActive;
 extern bool fLiteMode;
 extern int64_t enforceMasternodePaymentsTime;
 extern int keysLoaded;
