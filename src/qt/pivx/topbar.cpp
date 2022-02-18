@@ -760,8 +760,9 @@ void TopBar::onError(QString error, int type)
 
 void TopBar::onStakingBtnClicked()
 {
-    if (fStaking) {
+    if (fStakingActive) {
         ask("Confirm your choice", "Do you really want to DISABLE staking?\n");
+        fStakingActive = false;
         return;
     }
     else {
