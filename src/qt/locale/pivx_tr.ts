@@ -699,8 +699,8 @@ Stake için kaldırın</translation>
         <translation>Filtrele</translation>
     </message>
     <message>
-        <source>Amount of KYAN and zKYAN staked.</source>
-        <translation>Stake edilmiş KYAN ve zKYAN miktarı</translation>
+        <source>Amount of KYAN staked.</source>
+        <translation>Stake edilmiş KYAN miktarı</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1381,36 +1381,8 @@ Emin misiniz?</translation>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of KYAN units to zKYAN</source>
-        <translation>KYAN birimlerinin zKYAN'e otomatik basımını ektinleştir</translation>
-    </message>
-    <message>
-        <source>Enable zKYAN Automint</source>
-        <translation>zKYAN Otomatik basımı etkinleştir</translation>
-    </message>
-    <message>
-        <source>Enable automatic zKYAN minting from specific addresses</source>
-        <translation>Belirli bir adresten otomatik zKYAN minting yapılmasını etkinleştir</translation>
-    </message>
-    <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint adreslerini etkinleştir</translation>
-    </message>
-    <message>
-        <source>Percentage of incoming KYAN which get automatically converted to zKYAN via Zerocoin Protocol (min: 10%)</source>
-        <translation>Zerocoin Protokolü üzerinden otomatik olarak zKYAN'ye dönüştürülen gelen KYAN yüzdesi (dakika: 10%)</translation>
-    </message>
-    <message>
-        <source>Percentage of autominted zKYAN</source>
-        <translation>Otomatikleştirilmiş zKYAN yüzdesi</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough KYAN for this denomination is available</source>
-        <translation>Bu bölen için yeterli KYAN bulunana kadar Zerocoin'e otomatik dönüştürmede kalın</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zKYAN Denomination</source>
-        <translation>Tercih edilen Automint zKYAN Nominal değeri</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2070,10 +2042,6 @@ Adres: %4
     <message>
         <source>Custom Backup Path:</source>
         <translation>Özel Yedekleme Yolu:</translation>
-    </message>
-    <message>
-        <source>Custom zKYAN Backup Path:</source>
-        <translation>Özel zKYAN Yedekleme Yolu:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -2953,8 +2921,7 @@ Verify that you have installed a predetermined text editor.</source>
                            KYAN is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  KYAN incorporates market leading security &amp;
-                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zKYAN) and Zerocoin staking.
+                           privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
@@ -2966,9 +2933,7 @@ Verify that you have installed a predetermined text editor.</source>
                            &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
                            KYAN blockchain teknolojisini kullanan bir dijital online para birimidir
                            global olarak anında ve sıfıra yakın ücretlerle transfer edilebilir
-                           KYAN sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte
-                          Zerocoin (zKYAN) ve Zerocoin staking özelliklerini
-                          uygulayan ilk PoS (Proof of Stake) Kriptoparadır.
+                           KYAN sektördeki en ileri güvenlik ve gizliliğe sahip olmakla birlikte.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            KYAN bir  Proof of Stake (PoS) konsensüs algoritma sistemi kullanmaktadır,
 bu sayede KYAN sahipleri blok ödülü kazanımına katılabilmektedir
@@ -4209,10 +4174,6 @@ Hoşgeldiniz</translation>
         <translation>Tüm cüzdan işlemlerini sil ve sadece -rescan on startup komutuyla ilgili kısmımları sadece kurtar</translation>
     </message>
     <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Blockchain'e kaydedilmiş tüm zerocoin ve mintleri sil ve tekrar endeksle (0-1, varsayılan: %u)</translation>
-    </message>
-    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>MIT yazılım lisansı altında dağıtılmıştır, eşlik eden KOPYALAMA dosyasına bakın veya &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
@@ -4501,10 +4462,6 @@ Hoşgeldiniz</translation>
         <translation>Veritabanı okunurken hata oluştu, kapatılıyorç</translation>
     </message>
     <message>
-        <source>Error writing zerocoinDB to disk</source>
-        <translation>ZerocoinDB diske yazılırken hata oluştu</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Hata</translation>
     </message>
@@ -4605,14 +4562,6 @@ Hoşgeldiniz</translation>
         <translation>KYAN tedariği tekrar hesaplanıyor...</translation>
     </message>
     <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Zerocoin veritabanı tekrar endeksleniyor...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Zerocoin tekrar endekslemesi başarısız</translation>
-    </message>
-    <message>
         <source>Selected coins value is less than payment target</source>
         <translation>Seçili koinlerin değeri hedeflenen ödeme tutarından düşük</translation>
     </message>
@@ -4621,8 +4570,8 @@ Hoşgeldiniz</translation>
         <translation>Bu ön-sürümdeki bir test programıdır - riski kabullenerek kullanınız - staking ve ticaret uygulamalarında kullanmayın.</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>KYAN spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes, Zerocoin, Budgeting) (0-1, varsayılan: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>KYAN spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes) (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -4695,14 +4644,6 @@ Hoşgeldiniz</translation>
     <message>
         <source>Failed to parse public spend</source>
         <translation>Açık harcama çözümlemesi başarısız</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Zerocoin seçimi başarısız</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>ZerocoinDB silinmesi başarısız</translation>
     </message>
     <message>
         <source>Failed to write coin serial number into wallet</source>
@@ -5009,10 +4950,6 @@ Hoşgeldiniz</translation>
         <translation>Sporklar eşzamanlanıyor..</translation>
     </message>
     <message>
-        <source>Syncing zKYAN wallet...</source>
-        <translation>zKYAN cüzdanı eşzamanlanıyor..</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>Bu yardım mesajı</translation>
     </message>
@@ -5105,10 +5042,6 @@ Hoşgeldiniz</translation>
         <translation>JSON-RPC bağlantısı için kullanıcı adı</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zKYAN</source>
-        <translation>Aşağıdaki değer zKYAN'in mümkün olan en küçük bölüm değeridir (=1)</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Bloklar doğrulanıyor...</translation>
     </message>
@@ -5149,10 +5082,6 @@ Hoşgeldiniz</translation>
         <translation>Hata: Desteklenmeyen argüman -debugnet yok sayıldı, -debug=net kullanın.</translation>
     </message>
     <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Cüzdanınızda yeterli miktarda Zerocoin bulunmuyor</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Tx endeksini değiştirmek için veritabanını -reindex kullanarak tekrar oluşturmanız gerekmektedir </translation>
     </message>
@@ -5163,10 +5092,6 @@ Hoşgeldiniz</translation>
     <message>
         <source>ZeroMQ notification options:</source>
         <translation>ZeroMQ bildirim seçenekleri:</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Zerocoin seçenekleri:</translation>
     </message>
     <message>
         <source>on startup</source>

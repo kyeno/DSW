@@ -940,7 +940,7 @@ for staking</source>
     </message>
     <message>
         <location line="-558"/>
-        <source>Amount of KYAN and zKYAN staked.</source>
+        <source>Amount of KYAN staked.</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -1990,44 +1990,8 @@ NODES</source>
         <translation>Map port using &amp;UPnP</translation>
     </message>
     <message>
-        <location line="-187"/>
-        <source>Enable automatic minting of KYAN units to zKYAN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+6"/>
-        <source>Enable zKYAN Automint</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+7"/>
-        <source>Enable automatic zKYAN minting from specific addresses</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location line="+6"/>
         <source>Enable Automint Addresses</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+11"/>
-        <source>Percentage of incoming KYAN which get automatically converted to zKYAN via Zerocoin Protocol (min: 10%)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+3"/>
-        <source>Percentage of autominted zKYAN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+30"/>
-        <location line="+16"/>
-        <source>Wait with automatic conversion to Zerocoin until enough KYAN for this denomination is available</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="-13"/>
-        <source>Preferred Automint zKYAN Denomination</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3025,11 +2989,6 @@ Address: %4
     <message>
         <location line="+104"/>
         <source>Custom Backup Path:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+29"/>
-        <source>Custom zKYAN Backup Path:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -4415,8 +4374,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            KYAN is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  KYAN incorporates market leading security &amp;
-                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zKYAN) and Zerocoin staking.
+                           privacy.
                            &lt;/p&gt;&lt;p align=&quot;justify&quot;&gt;
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
@@ -6363,11 +6321,6 @@ Kyanite Wallet</source>
         <translation type="unfinished">Delete all wallet transactions and only recover those parts of the blockchain through -rescan on startup</translation>
     </message>
     <message>
-        <location line="+3"/>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location line="+6"/>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation type="unfinished">Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
@@ -6733,11 +6686,6 @@ Kyanite Wallet</source>
         <translation type="unfinished">Error reading from database, shutting down.</translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Error writing zerocoinDB to disk</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location line="+1"/>
         <source>Error</source>
         <translation type="unfinished">Error</translation>
@@ -6863,16 +6811,6 @@ Kyanite Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+2"/>
-        <source>Reindexing zerocoin database...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Reindexing zerocoin failed</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location line="+7"/>
         <source>Selected coins value is less than payment target</source>
         <translation type="unfinished"></translation>
@@ -6894,7 +6832,7 @@ Kyanite Wallet</source>
     </message>
     <message>
         <location line="-144"/>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
+        <source>Disable all KYAN specific functionality (Masternodes) (0-1, default: %u)</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7010,16 +6948,6 @@ Kyanite Wallet</source>
     <message>
         <location line="+7"/>
         <source>Failed to parse public spend</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Failed to select a zerocoin</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Failed to wipe zerocoinDB</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -7350,11 +7278,6 @@ Kyanite Wallet</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location line="+1"/>
-        <source>Failed to find Zerocoins in wallet database</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location line="+7"/>
         <source>Fee (in %s/kB) to add to transactions you send (default: %s)</source>
         <translation type="unfinished"></translation>
@@ -7636,11 +7559,6 @@ Kyanite Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Syncing zKYAN wallet...</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>The threshold value cannot be less than %s</source>
         <translation type="unfinished"></translation>
     </message>
@@ -7791,11 +7709,6 @@ Kyanite Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>Value is below the smallest available denomination (= 1) of zKYAN</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>Verifying blocks...</source>
         <translation type="unfinished">Verifying blocks...</translation>
     </message>
@@ -7851,11 +7764,6 @@ Kyanite Wallet</source>
     </message>
     <message>
         <location line="+1"/>
-        <source>You don&apos;t have enough Zerocoins in your wallet</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation type="unfinished">You need to rebuild the database using -reindex to change -txindex</translation>
     </message>
@@ -7867,16 +7775,6 @@ Kyanite Wallet</source>
     <message>
         <location line="+1"/>
         <source>ZeroMQ notification options:</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
-        <location line="+1"/>
-        <source>Zerocoin options:</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

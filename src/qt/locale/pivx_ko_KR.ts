@@ -700,8 +700,8 @@ for staking</source>
         <translation>Filter by</translation>
     </message>
     <message>
-        <source>Amount of KYAN and zKYAN staked.</source>
-        <translation>스테이킹 된 KYAN와 zKYAN 양</translation>
+        <source>Amount of KYAN staked.</source>
+        <translation>스테이킹 된 KYAN양</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1500,36 +1500,8 @@ Are you sure?</source>
         <translation>&amp;UPnp를 사용하여 포트 매핑</translation>
     </message>
     <message>
-        <source>Enable automatic minting of KYAN units to zKYAN</source>
-        <translation>보상받은 KYAN를 zKYAN로 자동변환 활성화</translation>
-    </message>
-    <message>
-        <source>Enable zKYAN Automint</source>
-        <translation>zKYAN 자동생성 활성화</translation>
-    </message>
-    <message>
-        <source>Enable automatic zKYAN minting from specific addresses</source>
-        <translation>특정 주소들로부터 자동으로 zKYAN 민트되는 것을 허용</translation>
-    </message>
-    <message>
         <source>Enable Automint Addresses</source>
         <translation>Automint 주소 사용</translation>
-    </message>
-    <message>
-        <source>Percentage of incoming KYAN which get automatically converted to zKYAN via Zerocoin Protocol (min: 10%)</source>
-        <translation>KYAN수신시 자동변환 zKYAN 비율 (최소값:10%)</translation>
-    </message>
-    <message>
-        <source>Percentage of autominted zKYAN</source>
-        <translation>자동 변환되는 zKYAN 비율</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough KYAN for this denomination is available</source>
-        <translation>이 디노미네이션의 KYAN가 충분해질 때까지 Zerocoin으로 자동전환은 보류됩니다.</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zKYAN Denomination</source>
-        <translation>선호하는 자동생성 zKYAN 디노미네이션 </translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2209,10 +2181,6 @@ Address: %4
     <message>
         <source>Custom Backup Path:</source>
         <translation>맞춤 백업 경로 :</translation>
-    </message>
-    <message>
-        <source>Custom zKYAN Backup Path:</source>
-        <translation>맞춤 zKYAN 백업 경로 :</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -4331,10 +4299,6 @@ Kyanite Wallet</translation>
         <translation>지갑의 모든 트랜잭션들을 삭제하고 오직 블록체인을 통한 트랜잭션 부분들만 복구합니다 -시작 시 다시 스캔</translation>
     </message>
     <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</translation>
-    </message>
-    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>MIT 소프트웨어 라이센스에 따라 배포, 첨부 파일 COPYING 또는 &lt;http://www.opensource.org/licenses/mit-license.php&gt; 를 참조하십시오.</translation>
     </message>
@@ -4603,10 +4567,6 @@ Kyanite Wallet</translation>
         <translation>데이터베이스에서서 읽어오는 중 오류가 발생했습니다. 종료합니다.</translation>
     </message>
     <message>
-        <source>Error writing zerocoinDB to disk</source>
-        <translation>디스크에 zerocoinDB 쓰기 오류</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>에러</translation>
     </message>
@@ -4707,14 +4667,6 @@ Kyanite Wallet</translation>
         <translation>KYAN 공급 재계산중...</translation>
     </message>
     <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>제로코인 데이타베이스 재색인</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>제로코인 재 인덱싱 실패</translation>
-    </message>
-    <message>
         <source>Selected coins value is less than payment target</source>
         <translation>지불대상보다 적은 코인 선택됨</translation>
     </message>
@@ -4723,8 +4675,8 @@ Kyanite Wallet</translation>
         <translation>이것은 사전 릴리스 테스트 빌드입니다 - 사용상 책임은 귀하에게 있습니다. - staking이나 상업적인 용도로는 절대 사용하지 마십시오!</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>KYAN의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, Budgeting) (0-1, 기본값: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>KYAN의 모든 특정 기능들을 비활성화합니다(마스터노드) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -4789,14 +4741,6 @@ Kyanite Wallet</translation>
     <message>
         <source>Error: No valid utxo!</source>
         <translation>Error: 유효하지 않는 utxo!</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>제로코인 선택 실패</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>제로코인 DB 삭제 실패</translation>
     </message>
     <message>
         <source>Failed to write coin serial number into wallet</source>
@@ -5115,10 +5059,6 @@ Kyanite Wallet</translation>
         <translation>sporks와 동기화 중입니다...</translation>
     </message>
     <message>
-        <source>Syncing zKYAN wallet...</source>
-        <translation>zKYAN 지갑 동기화중...</translation>
-    </message>
-    <message>
         <source>This help message</source>
         <translation>도움말 메시지입니다</translation>
     </message>
@@ -5211,10 +5151,6 @@ Kyanite Wallet</translation>
         <translation>JSON-RPC 연결 사용자 이름</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zKYAN</source>
-        <translation>Value is below the smallest available denomination (= 1) of zKYAN</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>블록 인증 중...</translation>
     </message>
@@ -5255,10 +5191,6 @@ Kyanite Wallet</translation>
         <translation>경고 : 지원하지 않는 인수 -debugnet 무시됨 -debug=net를 사용하십시오.</translation>
     </message>
     <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>지갑에 zKYAN 가 부족합니다.</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>-treindex를 변경하려면 -reindex를 사용하여 데이터베이스를 다시 빌드해야합니다.</translation>
     </message>
@@ -5269,10 +5201,6 @@ Kyanite Wallet</translation>
     <message>
         <source>ZeroMQ notification options:</source>
         <translation>ZeroMQ 알림 옵션:</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>제로코인 옵션:</translation>
     </message>
     <message>
         <source>on startup</source>

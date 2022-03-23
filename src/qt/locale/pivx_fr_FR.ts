@@ -747,8 +747,8 @@ pour le staking</translation>
         <translation>Filtrer par</translation>
     </message>
     <message>
-        <source>Amount of KYAN and zKYAN staked.</source>
-        <translation>Le montant de KYAN et de zKYAN en staking</translation>
+        <source>Amount of KYAN staked.</source>
+        <translation>Le montant de KYAN en staking</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1623,36 +1623,8 @@ NODES</translation>
         <translation>Répertorier les port utilisant UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of KYAN units to zKYAN</source>
-        <translation>Activé l'auto-monnayage de KYAN unités en zKYAN</translation>
-    </message>
-    <message>
-        <source>Enable zKYAN Automint</source>
-        <translation>Activer l'Auto-monnayage zKYAN </translation>
-    </message>
-    <message>
-        <source>Enable automatic zKYAN minting from specific addresses</source>
-        <translation>Activer la frappe zKYAN automatique à partir d'adresses spécifiques</translation>
-    </message>
-    <message>
         <source>Enable Automint Addresses</source>
         <translation>Activer les Adresses Automint</translation>
-    </message>
-    <message>
-        <source>Percentage of incoming KYAN which get automatically converted to zKYAN via Zerocoin Protocol (min: 10%)</source>
-        <translation>Pourcentage des KYAN entrants qui seront automatiquement convertis en zKYAN via le protocole Zerocoin (min. 10%)</translation>
-    </message>
-    <message>
-        <source>Percentage of autominted zKYAN</source>
-        <translation>Pourcentage de zKYAN auto-monnayé</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough KYAN for this denomination is available</source>
-        <translation>Met en attente la conversion automatique Zerocoin jusqu'à ce qu'il y ai suffisament de KYAN disponibles pour la dénomination demandée</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zKYAN Denomination</source>
-        <translation>Dénomination préférée pour l'auto-monnayage zKYAN</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2412,10 +2384,6 @@ Adresse : %4
     <message>
         <source>Custom Backup Path:</source>
         <translation>Chemin du répertoire de sauvegarde personnalisé:</translation>
-    </message>
-    <message>
-        <source>Custom zKYAN Backup Path:</source>
-        <translation>Chemin du répertoire de sauvegarde zKYAN personnalisé:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3529,8 +3497,7 @@ Il y a eu une erreur de sauvegarde de la liste d'adresses vers %1. SVP rééssay
                            KYAN is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  KYAN incorporates market leading security &amp;
-                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zKYAN) and Zerocoin staking.
+                           privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
@@ -3543,7 +3510,7 @@ Il y a eu une erreur de sauvegarde de la liste d'adresses vers %1. SVP rééssay
 KYAN est une forme de monnaie digitale en ligne qui utilise la technologie de la blockchain
 et qui peut être facilement transférée globalement, instantanément, avec des frais
 quasi nuls. KYAN intègre les meilleures solutions de sécurité et de confidentialité
-du marché et elle est également la première cryptomonnaie avec un consensus PoS (Proof of Stake ou Preuve d'Enjeu) à implémenter Zerocoin(zKYAN) ainsi que le staking de Zerocoin.
+du marché.
 &lt;/p&gt;&lt;p align="justify"&gt;
 KYAN utilise un système de consensus de type Proof of Stake (PoS),
 permettant à tous les détenteurs de KYAN de participer au réseau et de gagner des récompenses
@@ -5124,10 +5091,6 @@ Portefeuille Kyanite</translation>
         <translation>Supprimer toutes les transactions de portefeuille et ne récupérer ces parties de la blockchain que via -rescan au démarrage</translation>
     </message>
     <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Supprimez toutes les dépenses de zerocoin et monnayez qui ont été enregistrées dans la base de données blockchain et réindexez-les (0-1, par défaut: %u)</translation>
-    </message>
-    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Distribué sous la licence du logiciel MIT, consultez le fichier d'accompagnement COPYING ou &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
@@ -5420,10 +5383,6 @@ Portefeuille Kyanite</translation>
         <translation>Erreur de lecture de la base de données, fermeture du programme.</translation>
     </message>
     <message>
-        <source>Error writing zerocoinDB to disk</source>
-        <translation>Erreur lors de l'écriture de zerocoinDB sur le disque</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Erreur</translation>
     </message>
@@ -5524,14 +5483,6 @@ Portefeuille Kyanite</translation>
         <translation>Recalcule de KYAN émis...</translation>
     </message>
     <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Réindexation de la base de données zerocoin...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>La réindexation zerocoin a échoué</translation>
-    </message>
-    <message>
         <source>Selected coins value is less than payment target</source>
         <translation>La valeur des monnaies choisies est inférieure au montant cible</translation>
     </message>
@@ -5557,7 +5508,7 @@ Portefeuille Kyanite</translation>
     </message>
     <message>
         <source>Specify custom backup path to add a copy of any wallet backup. If set as dir, every backup generates a timestamped file. If set as file, will rewrite to that file every backup.</source>
-        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques zKYAN. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente.</translation>
+        <translation>Spécifier un chemin de sauvegarde personnalisé pour y ajouter les sauvegardes automatiques. S'il est paramétré comme un dossier, chaque sauvegarde génère un fichier horodaté. S'il est paramétré comme fichier, chaque sauvegarde écrasera la précédente.</translation>
     </message>
     <message>
         <source>&lt;category&gt; can be:</source>
@@ -5610,14 +5561,6 @@ Portefeuille Kyanite</translation>
     <message>
         <source>Failed to parse public spend</source>
         <translation>Impossible d'analyser les dépenses publiques</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Impossible de sélectionner un zerocoin</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Impossible de nettoyer zerocoinDB</translation>
     </message>
     <message>
         <source>Failed to write coin serial number into wallet</source>
@@ -6082,10 +6025,6 @@ Portefeuille Kyanite</translation>
         <translation>Synchronisation des sporks ...</translation>
     </message>
     <message>
-        <source>Syncing zKYAN wallet...</source>
-        <translation>Synchronisation du portefeuille zKYAN ...</translation>
-    </message>
-    <message>
         <source>The threshold value cannot be less than %s</source>
         <translation>La valeur limite ne doit pas êre inférieur à %s</translation>
     </message>
@@ -6202,10 +6141,6 @@ Portefeuille Kyanite</translation>
         <translation>Nom d'utilisateur pour les connections JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zKYAN</source>
-        <translation>La valeur est inférieure à la plus petite dénomination disponible (= 1) de zKYAN</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Vérification des blocs...</translation>
     </message>
@@ -6246,10 +6181,6 @@ Portefeuille Kyanite</translation>
         <translation>Avertissement: argument non pris en charge -debugnet ignoré, utilisez -debug=net.</translation>
     </message>
     <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Vous n'avez pas assez de Zerocoins dans votre portefeuille</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>Vous devez reconstruire la base de données en utilisant -reindex pour modifier -txindex</translation>
     </message>
@@ -6260,14 +6191,6 @@ Portefeuille Kyanite</translation>
     <message>
         <source>ZeroMQ notification options:</source>
         <translation>ZeroMQ options de notification:</translation>
-    </message>
-    <message>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation>Génération de Zerocoin disponible uniquement sur regtest</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Options Zerocoin:</translation>
     </message>
     <message>
         <source>on startup</source>

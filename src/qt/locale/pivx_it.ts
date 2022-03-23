@@ -747,8 +747,8 @@ per lo staking</translation>
         <translation>Filtra per</translation>
     </message>
     <message>
-        <source>Amount of KYAN and zKYAN staked.</source>
-        <translation>Quantità di KYAN e zKYAN dallo stake.</translation>
+        <source>Amount of KYAN staked.</source>
+        <translation>Quantità di KYAN in staking.</translation>
     </message>
     <message>
         <source>Please wait until the wallet is fully synced to see your correct balance</source>
@@ -1626,36 +1626,8 @@ NODE</translation>
         <translation>Mappa la porta utilizzando &amp;UPnP</translation>
     </message>
     <message>
-        <source>Enable automatic minting of KYAN units to zKYAN</source>
-        <translation>Attiva la forgiatura automatica di unità KYAN in zKYAN</translation>
-    </message>
-    <message>
-        <source>Enable zKYAN Automint</source>
-        <translation>Attiva forgiatura automatica zKYAN</translation>
-    </message>
-    <message>
-        <source>Enable automatic zKYAN minting from specific addresses</source>
-        <translation>Attiva la forgiatura automatica di zKYAN da indirizzi specifici</translation>
-    </message>
-    <message>
         <source>Enable Automint Addresses</source>
         <translation>Abilita indirizzi forgiatura automatica</translation>
-    </message>
-    <message>
-        <source>Percentage of incoming KYAN which get automatically converted to zKYAN via Zerocoin Protocol (min: 10%)</source>
-        <translation>Percentuale di KYAN in entrata che viene automaticamente convertita in zKYAN attraverso il protocollo Zerocoin (min: 10%)</translation>
-    </message>
-    <message>
-        <source>Percentage of autominted zKYAN</source>
-        <translation>Percentuale di zKYAN Percentuale di zKYAN da forgiare automaticamente</translation>
-    </message>
-    <message>
-        <source>Wait with automatic conversion to Zerocoin until enough KYAN for this denomination is available</source>
-        <translation>Attendere la conversione automatica in Zerocoin fino a quando non saranno disponibili abbastanza KYAN per questa denominazione</translation>
-    </message>
-    <message>
-        <source>Preferred Automint zKYAN Denomination</source>
-        <translation>Denominazione preferita forgiatura automatica zKYAN</translation>
     </message>
     <message>
         <source>Stake split threshold:</source>
@@ -2415,10 +2387,6 @@ Indirizzo: %4
     <message>
         <source>Custom Backup Path:</source>
         <translation>Percorso di backup personalizzato:</translation>
-    </message>
-    <message>
-        <source>Custom zKYAN Backup Path:</source>
-        <translation>Percorso di backup zKYAN personalizzato:</translation>
     </message>
     <message>
         <source>Custom Backups Threshold:</source>
@@ -3532,8 +3500,7 @@ Si è verificato un errore nel tentativo di salvare l'elenco degli indirizzi in 
                            KYAN is a form of digital online money using blockchain technology
                            that can be easily transferred globally, instantly, and with near
                            zero fees.  KYAN incorporates market leading security &amp;
-                           privacy and is also the first PoS (Proof of Stake) Cryptocurrency
-                           to implement ZeroCoin(zKYAN) and Zerocoin staking.
+                           privacy.
                            &lt;/p&gt;&lt;p align="justify"&gt;
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
@@ -3545,9 +3512,7 @@ Si è verificato un errore nel tentativo di salvare l'elenco degli indirizzi in 
 &lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p align="justify"&gt;
 KYAN è una forma di denaro online digitale che utilizza la tecnologia blockchain
 che può essere facilmente trasferito a livello globale, istantaneamente e con quasi
-zero costi. KYAN incorpora le tecniche di sicurezza e privacy più avanzate del mercato
-ed è anche la prima criptovaluta PoS (Proof of Stake)
-ad implementare lo staking di ZeroCoin (zKYAN) e Zerocoin.
+zero costi. KYAN incorpora le tecniche di sicurezza e privacy.
 &lt;/p&gt;&lt;p align="justify"&gt;
 KYAN utilizza un algoritmo del sistema di consenso Proof of Stake (PoS),
 consentendo a tutti i proprietari di KYAN di partecipare alle ricompense dei blocchi
@@ -5136,10 +5101,6 @@ Portafoglio Kyanite.</translation>
         <translation>Elimina tutte le transazioni del portafoglio e recupera solo quelle parti della blockchain tramite -rescan all'avvio</translation>
     </message>
     <message>
-        <source>Delete all zerocoin spends and mints that have been recorded to the blockchain database and reindex them (0-1, default: %u)</source>
-        <translation>Elimina tutte le spese e forgiature zerocoin che sono state registrate nella blockchain e le reindicizza (0-1, impostazione predefinita: %u)</translation>
-    </message>
-    <message>
         <source>Distributed under the MIT software license, see the accompanying file COPYING or &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</source>
         <translation>Distribuito sotto la licenza del software MIT, consultare il file di accompagnamento COPYING o &lt;http://www.opensource.org/licenses/mit-license.php&gt;.</translation>
     </message>
@@ -5432,10 +5393,6 @@ Portafoglio Kyanite.</translation>
         <translation>Errore durante la lettura dal database, arresto.</translation>
     </message>
     <message>
-        <source>Error writing zerocoinDB to disk</source>
-        <translation>Errore durante la scrittura di zerocoinDB sul disco</translation>
-    </message>
-    <message>
         <source>Error</source>
         <translation>Errore</translation>
     </message>
@@ -5536,14 +5493,6 @@ Portafoglio Kyanite.</translation>
         <translation>Ricalcolo della supply KYAN...</translation>
     </message>
     <message>
-        <source>Reindexing zerocoin database...</source>
-        <translation>Reindicizzazione del database zerocoin...</translation>
-    </message>
-    <message>
-        <source>Reindexing zerocoin failed</source>
-        <translation>Errore nella reindicizzazione del database zerocoin</translation>
-    </message>
-    <message>
         <source>Selected coins value is less than payment target</source>
         <translation>Il valore delle coin selezionate è inferiore all'obiettivo di pagamento</translation>
     </message>
@@ -5552,8 +5501,8 @@ Portafoglio Kyanite.</translation>
         <translation>Questa è una build di test pre-release - utilizzare a proprio rischio - non utilizzare per staking o applicazioni commerciali!</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Disabilita tutte le funzionalità specifiche di KYAN (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes) (0-1, default: %u)</source>
+        <translation>Disabilita tutte le funzionalità specifiche di KYAN (Masternodes) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5626,14 +5575,6 @@ Portafoglio Kyanite.</translation>
     <message>
         <source>Failed to parse public spend</source>
         <translation>Analisi della spesa pubblica non riuscita</translation>
-    </message>
-    <message>
-        <source>Failed to select a zerocoin</source>
-        <translation>Impossibile selezionare uno zerocoin</translation>
-    </message>
-    <message>
-        <source>Failed to wipe zerocoinDB</source>
-        <translation>Impossibile cancellare zerocoinDB</translation>
     </message>
     <message>
         <source>Failed to write coin serial number into wallet</source>
@@ -6098,10 +6039,6 @@ Portafoglio Kyanite.</translation>
         <translation>Sincronizzazione sporks...</translation>
     </message>
     <message>
-        <source>Syncing zKYAN wallet...</source>
-        <translation>Sincronizzazione del portafoglio zKYAN...</translation>
-    </message>
-    <message>
         <source>The threshold value cannot be less than %s</source>
         <translation>Il valore di soglia non può essere inferiore a %s</translation>
     </message>
@@ -6218,10 +6155,6 @@ Portafoglio Kyanite.</translation>
         <translation>Nome utente per connessioni JSON-RPC</translation>
     </message>
     <message>
-        <source>Value is below the smallest available denomination (= 1) of zKYAN</source>
-        <translation>Il valore è inferiore alla denominazione più piccola disponibile (=1) di zKYAN</translation>
-    </message>
-    <message>
         <source>Verifying blocks...</source>
         <translation>Verifica dei blocchi...</translation>
     </message>
@@ -6262,10 +6195,6 @@ Portafoglio Kyanite.</translation>
         <translation>Avvertenza: argomento non supportato -debugnet ignorato, utilizzare -debug=net.</translation>
     </message>
     <message>
-        <source>You don't have enough Zerocoins in your wallet</source>
-        <translation>Non hai abbastanza Zerocoin nel tuo portafoglio</translation>
-    </message>
-    <message>
         <source>You need to rebuild the database using -reindex to change -txindex</source>
         <translation>È necessario ricostruire il database utilizzando -reindex per modificare -txindex</translation>
     </message>
@@ -6276,14 +6205,6 @@ Portafoglio Kyanite.</translation>
     <message>
         <source>ZeroMQ notification options:</source>
         <translation>Opzioni di notifica ZeroMQ:</translation>
-    </message>
-    <message>
-        <source>Zerocoin minting available only on regtest</source>
-        <translation>Coniatura di Zerocoin disponibile solo su regtest</translation>
-    </message>
-    <message>
-        <source>Zerocoin options:</source>
-        <translation>Opzioni Zerocoin:</translation>
     </message>
     <message>
         <source>on startup</source>
