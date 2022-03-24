@@ -4524,10 +4524,6 @@ Portfel Kyanite</translation>
         <translation>Nie można uzyskać dostępu do katalogu danych %s. Kyanite prawdopodobnie już działa.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Zmień zachowanie automatycznego głosowania w budżecie finalizowanym. mode=auto: Głosuj tylko na dokładne sfinalizowane dopasowanie budżetu do mojego wygenerowanego budżetu. (ciąg, domyślny: auto)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Limit bezpłatnych transakcji do &lt;n&gt;* 1000 bajtów na minutę (domyślnie:%u)</translation>
     </message>
@@ -4956,8 +4952,8 @@ Portfel Kyanite</translation>
         <translation>Jest to wersja testowa pre-release - korzystaj z niej na własne ryzyko - nie używaj do staking lub prawdziwych transakcji!</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Wyłącz wszystkie funkcje specyficzne dla KYAN (Masternodes, Zerocoin, Budgeting) (0-1, domyślnie: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin) (0-1, default: %u)</source>
+        <translation>Wyłącz wszystkie funkcje specyficzne dla KYAN (Masternodes, Zerocoin) (0-1, domyślnie: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5074,10 +5070,6 @@ Portfel Kyanite</translation>
     <message>
         <source>Loading block index...</source>
         <translation>Ładowanie indeksu bloków ...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Ładowanie cache budżetu ...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -5358,10 +5350,6 @@ Portfel Kyanite</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>Synchronizacja zakończona</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Synchronizowanie budżetów ...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>

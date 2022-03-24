@@ -3535,7 +3535,7 @@ Il y a eu une erreur de sauvegarde de la liste d'adresses vers %1. SVP rééssay
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -3645,8 +3645,6 @@ pour voir votre solde de monnaie dépensable sur le réseau.
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -3684,8 +3682,6 @@ exigence de 10 000 KYAN déposé en garantie pour fournir au réseau des service
 Ces services comprennent:
 &lt;/p&gt;&lt;p align="justify"&gt;
 &lt;ul&gt;
-&lt;li&gt;une gouvernance décentralisée (vote des motions)&lt;/li&gt;
-&lt;li&gt;un système de budget décentralisé (financement)&lt;/li&gt;
 &lt;li&gt;validation des transactions dans chaque bloc&lt;/li&gt;
 &lt;li&gt;Agit comme un noeud supplémentaire pour sécuriser le réseau&lt;/li&gt;
 &lt;/ul&gt;
@@ -5108,10 +5104,6 @@ Portefeuille Kyanite</translation>
         <translation>Impossible de vérouiller le répertoire de données %s. Kyanite est probablement déjà en cours d'exécution.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Modifier le comportement du vote budgétaire automatique. mode = auto: ne votez que pour une correspondance exacte avec votre budget généré. (chaîne, par défaut: auto)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Limiter continuellement les transactions gratuites à &lt;n&gt;* 1000 octets par minute (par défaut: %u)</translation>
     </message>
@@ -5656,10 +5648,6 @@ Portefeuille Kyanite</translation>
         <translation>Chargement de l'index des blocs...</translation>
     </message>
     <message>
-        <source>Loading budget cache...</source>
-        <translation>Chargement du cache budget ...</translation>
-    </message>
-    <message>
         <source>Loading masternode cache...</source>
         <translation>Chargement du cache masternode...</translation>
     </message>
@@ -6064,10 +6052,6 @@ Portefeuille Kyanite</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>Synchronisation terminée</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Synchronisation des budgets...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>

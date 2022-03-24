@@ -3464,7 +3464,7 @@ Došlo je do greške prilikom spremanja popisa adresa u %1. Molimo pokušajte po
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -3556,8 +3556,6 @@ da biste vidjeli i mogli potrošiti sredstva na mreži.
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -3597,8 +3595,6 @@ Te usluge uključuju:
 &lt;/p&gt;&lt;p align="justify"&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Decentralizirano upravljanje (glasanje o zahtjevima)&lt;/li&gt;
-&lt;li&gt;Decentralizirani sustav proračuna (riznica)&lt;/li&gt;
 &lt;li&gt;Validacija transakcija unutar svakog bloka&lt;/li&gt;
 &lt;li&gt;Djeluje kao dodatni full node u mreži&lt;/li&gt;
 &lt;/ul&gt;
@@ -4956,10 +4952,6 @@ Kyanite Wallet</source>
         <translation>Nije moguće dobiti zaključavanje na direktoriju podataka %s. Kyanite vjerojatno već radi.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Promjena ponašanja glasova na automatskom finaliziranom proračunu. mode = auto: Glasujte samo za točan završeni proračun s mojim generiranim proračunom. (niz, zadani: automatski)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Stalne besplatne transakcije bez ograničenja stope na &lt;n&gt;* 1000 bajta po minuti (zadano: %u)</translation>
     </message>
@@ -5389,8 +5381,8 @@ Kyanite Wallet</source>
         <translation>Ovo je priprema za testiranje prije puštanja - upotrebljavajte na vlastiti rizik - nemojte ga koristiti za staking ili trgovinske aplikacije!</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Onemogući sve specifične funkcije KYAN (Masternodes, Zerocoin, Budgeting) (0-1, zadano: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin) (0-1, default: %u)</source>
+        <translation>Onemogući sve specifične funkcije KYAN (Masternodes, Zerocoin) (0-1, zadano: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5507,10 +5499,6 @@ Kyanite Wallet</source>
     <message>
         <source>Loading block index...</source>
         <translation>Učitavanje indeksa blokova...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Učitavanje predmemorije proračuna...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -5813,10 +5801,6 @@ Kyanite Wallet</source>
     <message>
         <source>Synchronization finished</source>
         <translation>Sinkronizacija završena</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Sinkronizacija proračuna...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>

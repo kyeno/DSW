@@ -3260,7 +3260,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -3346,8 +3346,6 @@ KYAN使用了一个股权证明(PoS)一致系统算法，
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -3388,8 +3386,6 @@ KYAN使用了一个股权证明(PoS)一致系统算法，
 &lt;/p&gt;&lt;p align="justify"&gt;
 
 &lt;ul&gt;
-&lt;li&gt;去中心化治理(提案投票)&lt;/li&gt;
-&lt;li&gt;去中心化预算系统(国库)&lt;/li&gt;
 &lt;li&gt;验证每个区块交易&lt;/li&gt;
 &lt;li&gt;充当网络中的另一个完整节点&lt;/li&gt;
 &lt;/ul&gt;
@@ -4657,10 +4653,6 @@ Kyanite心钱包</translation>
         <translation>无法获取数据目录%s锁。Kyanite心可能已经在运行了。</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>改变自动完成的预算投票行为。模式=自动:只对与生成的预算完全匹配的最终预算进行投票。(字符串,默认:汽车)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>连续速率限制免费交易可达&lt;n&gt;每分钟*1000字节(默认:%u)</translation>
     </message>
@@ -5089,8 +5081,8 @@ Kyanite心钱包</translation>
         <translation>这是一个预发行测试版本 - 您自己承担风险 - 不要用于商业应用！</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>禁用所有KYAN特定功能(主节点, 零币, budget)(0-1，默认值:%u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin) (0-1, default: %u)</source>
+        <translation>禁用所有KYAN特定功能(主节点, 零币)(0-1，默认值:%u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5207,10 +5199,6 @@ Kyanite心钱包</translation>
     <message>
         <source>Loading block index...</source>
         <translation>正在下载区块索引...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>正在下载加载预算…</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -5491,10 +5479,6 @@ Kyanite心钱包</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>同步已完成</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>正在同步预算...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>

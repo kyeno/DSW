@@ -3532,7 +3532,7 @@ There was an error trying to save the address list to %1. Please try again.</sou
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -3619,8 +3619,6 @@ KYAN использует консенсус PoS (Proof of Stake), позвол�
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -5070,10 +5068,6 @@ Kyanite Wallet</source>
         <translation>Не удается получить блокировку в каталоге данных %s. Kyanite, вероятно, уже запущен.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Изменить автоматическое окончательное поведение бюджета. mode = auto: Голосовать за точный окончательный бюджет, соответствующий моему сгенерированному бюджету. (строка, по умолчанию: авто)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Непрерывные транзакции с ограничениями по скорости до &lt;n&gt;* 1000 байт в минуту (по умолчанию: %u)</translation>
     </message>
@@ -5502,8 +5496,8 @@ Kyanite Wallet</source>
         <translation>Это предварительная версия сборки - используйте на свой страх и риск - не используйте для ставок или коммерческих приложений!</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Отключите все специфические функции KYAN (Masternodes, Zerocoin, Бюджетирование) (0-1, по умолчанию: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin) (0-1, default: %u)</source>
+        <translation>Отключите все специфические функции KYAN (Masternodes, Zerocoin) (0-1, по умолчанию: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5620,10 +5614,6 @@ Kyanite Wallet</source>
     <message>
         <source>Loading block index...</source>
         <translation>Загружается индекс блока ...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Загрузка кэша бюджета ...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -6026,10 +6016,6 @@ Kyanite Wallet</source>
     <message>
         <source>Synchronization finished</source>
         <translation>Синхронизация завершена</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Синхронизация бюджетов ...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>

@@ -50,7 +50,6 @@
 
 class CBlockIndex;
 class CBlockTreeDB;
-class CBudgetManager;
 class CZerocoinDB;
 class CSporkDB;
 class CBloomFilter;

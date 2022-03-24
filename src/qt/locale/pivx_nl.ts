@@ -3538,7 +3538,7 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -3650,8 +3650,6 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -3691,8 +3689,6 @@ Er was een fout opgetreden tijdens het opslaan van deze adreslijst naar %1. Prob
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;Een gedecentralizeerd bestuur (Stemming Voorstel)&lt;/li&gt;
-                           &lt;li&gt;Een gedecentralizeerd budgeteringssysteem (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validatie van transacties binnen elk blok&lt;/li&gt;
                            &lt;li&gt;Fungeert als een extra volledige node in het netwerk&lt;/li&gt;
                            &lt;/ul&gt;
@@ -5120,10 +5116,6 @@ Kyanite Portemonnee</translation>
         <translation>Kan geen vergrendeling op data directory %s verkrijgen. Kyanite loopt waarschijnlijk al.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Verander automatisch gefinaliseerd budget voting gedrag. modus=auto: Stem enkel voor exact gefinaliseerde budget overeenkomend met mijn gegenereerde budget. (tekenreeks, standaard: auto)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Doorlopend rate-limit gratis transacties naar&lt;n&gt;*1000 bytes per minuut (default:%u)</translation>
     </message>
@@ -5552,8 +5544,8 @@ Kyanite Portemonnee</translation>
         <translation>Dit is een pre-release test build - gebruik op eigen risico - niet gebruiken voor staking of handel applicaties!</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Schakel alle specifieke KYAN functionaliteit uit (Masternodes, Zerocoin, Budgeting) (0-1, standaard: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin) (0-1, default: %u)</source>
+        <translation>Schakel alle specifieke KYAN functionaliteit uit (Masternodes, Zerocoin) (0-1, standaard: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5670,10 +5662,6 @@ Kyanite Portemonnee</translation>
     <message>
         <source>Loading block index...</source>
         <translation>Blockindex laden...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Budget cache laden...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -6080,10 +6068,6 @@ Kyanite Portemonnee</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>Synchronisatie voltooid</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Budgeten synchroniseren...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>

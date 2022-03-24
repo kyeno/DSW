@@ -4315,10 +4315,6 @@ Kyanite Wallet</translation>
         <translation>        &lt;translation&gt;잠겨진 데이터 디렉토리 %s 를 가져올 수 없습니다. Kyanite는 이미 실행 중입니다.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>최종 budget 투표 자동 작동 값을 변경합니다. mode=auto: 오직 내가 생성한 budget과 최종 budget이 정확히 일치할때 투표합니다. (string, 기본값: 자동)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>연속적인 무료 트랜잭션을 분당 &lt;n&gt;*1000 bytes로 제한합니다. (기본값:%u)</translation>
     </message>
@@ -4723,8 +4719,8 @@ Kyanite Wallet</translation>
         <translation>이것은 사전 릴리스 테스트 빌드입니다 - 사용상 책임은 귀하에게 있습니다. - staking이나 상업적인 용도로는 절대 사용하지 마십시오!</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>KYAN의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화, Budgeting) (0-1, 기본값: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin) (0-1, default: %u)</source>
+        <translation>KYAN의 모든 특정 기능들을 비활성화합니다(마스터노드, 난독화) (0-1, 기본값: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -4833,10 +4829,6 @@ Kyanite Wallet</translation>
     <message>
         <source>Loading block index...</source>
         <translation>블록 인덱스를 불러오는 중...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>budget 캐시를 불러오는 중...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -5097,10 +5089,6 @@ Kyanite Wallet</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>동기화 완료</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>budgets 동기화 중입니다...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>

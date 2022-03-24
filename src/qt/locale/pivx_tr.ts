@@ -2959,7 +2959,7 @@ Verify that you have installed a predetermined text editor.</source>
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -3035,8 +3035,6 @@ bu sayede KYAN sahipleri blok ödülü kazanımına katılabilmektedir
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -3076,8 +3074,6 @@ bu sayede KYAN sahipleri blok ödülü kazanımına katılabilmektedir
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;Merkeziyetsiz yönetim (Teklif Onaylama)&lt;/li&gt;
-                           &lt;li&gt;Merkeziyetsiz bütçe sistemi (Hazine)&lt;/li&gt;
                            &lt;li&gt;Her blogun içinde işlem onayı&lt;/li&gt;
                            &lt;li&gt;Ağda ek bir düğüm olarak görev yapmak&lt;/li&gt;
                            &lt;/ul&gt;
@@ -4193,10 +4189,6 @@ Hoşgeldiniz</translation>
         <translation>Veri dizini %s üzerinde bir kilit elde edemiyor. Kyanite muhtemelen zaten çalışıyor.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Otomatik sonuçlandırılmış bütçe oylama davranışını değiştirin. mode = auto: Yalnızca kesin bütçelendirilmiş bütçeyi, oluşturulan bütçemle eşleştirmek için oy verin. (dize, varsayılan: otomatik)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Ücretsiz işlemleri belirli aralıklarla sınırla &lt;n&gt;*1000 bytes dakikada (varsayılan: %u)</translation>
     </message>
@@ -4621,8 +4613,8 @@ Hoşgeldiniz</translation>
         <translation>Bu ön-sürümdeki bir test programıdır - riski kabullenerek kullanınız - staking ve ticaret uygulamalarında kullanmayın.</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>KYAN spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes, Zerocoin, Budgeting) (0-1, varsayılan: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin) (0-1, default: %u)</source>
+        <translation>KYAN spesifik tüm fonksiyonaliteyi devre dışı bırak (Masternodes, Zerocoin) (0-1, varsayılan: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -4731,10 +4723,6 @@ Hoşgeldiniz</translation>
     <message>
         <source>Loading block index...</source>
         <translation>Blok endeksi yükleniyor...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Bütçe ön belleği yükleniyor...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -4991,10 +4979,6 @@ Hoşgeldiniz</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>Eşzamanlama tamamlandı</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Bütçe eşzamanlanıyor..</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>

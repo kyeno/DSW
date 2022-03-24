@@ -3538,7 +3538,7 @@ Si è verificato un errore nel tentativo di salvare l'elenco degli indirizzi in 
                            KYAN utilizes a Proof of Stake (PoS) consensus system algorithm,
                            allowing all owners of KYAN to participate in earning block rewards
                            while securing the network with full node wallets, as well as to
-                           run Masternodes to create and vote on proposals.
+                           run Masternodes to earn additional income regulary.
                            &lt;/p&gt;&lt;/body&gt;&lt;/html&gt;
                          </source>
         <translation>
@@ -3650,8 +3650,6 @@ per vedere e spendere i saldi sulla rete.
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;A decentralized governance (Proposal Voting)&lt;/li&gt;
-                           &lt;li&gt;A decentralized budgeting system (Treasury)&lt;/li&gt;
                            &lt;li&gt;Validation of transactions within each block&lt;/li&gt;
                            &lt;li&gt;Act as an additional full node in the network&lt;/li&gt;
                            &lt;/ul&gt;
@@ -3691,8 +3689,6 @@ regolarmente. Questi servizi includono:
                            &lt;/p&gt;&lt;p align="justify"&gt;
 
                            &lt;ul&gt;
-                           &lt;li&gt;Una governance decentrata (votazione della proposta)&lt;/li&gt;
-                           &lt;li&gt;Un sistema di bilancio decentralizzato (Tesoreria)&lt;/li&gt;
                            &lt;li&gt;Convalida delle transazioni all'interno di ciascun blocco&lt;/li&gt;
                            &lt;li&gt;Funziona come un nodo completo aggiuntivo nella rete&lt;/li&gt;
                            &lt;/ul&gt;
@@ -5120,10 +5116,6 @@ Portafoglio Kyanite.</translation>
         <translation>Impossibile allocare la directory di dati %s. Probabilmente Kyanite è già in esecuzione.</translation>
     </message>
     <message>
-        <source>Change automatic finalized budget voting behavior. mode=auto: Vote for only exact finalized budget match to my generated budget. (string, default: auto)</source>
-        <translation>Modifica il comportamento di votazione automatica del budget finalizzato. mode=auto: vota solo per la corrispondenza esatta del budget finalizzato al mio budget generato. (stringa, impostazione predefinita: auto)</translation>
-    </message>
-    <message>
         <source>Continuously rate-limit free transactions to &lt;n&gt;*1000 bytes per minute (default:%u)</source>
         <translation>Limita continuamente le transazioni gratuite a &lt;n&gt;* 1000 byte al minuto (impostazione predefinita: %u)</translation>
     </message>
@@ -5552,8 +5544,8 @@ Portafoglio Kyanite.</translation>
         <translation>Questa è una build di test pre-release - utilizzare a proprio rischio - non utilizzare per staking o applicazioni commerciali!</translation>
     </message>
     <message>
-        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</source>
-        <translation>Disabilita tutte le funzionalità specifiche di KYAN (Masternodes, Zerocoin, Budgeting) (0-1, default: %u)</translation>
+        <source>Disable all KYAN specific functionality (Masternodes, Zerocoin) (0-1, default: %u)</source>
+        <translation>Disabilita tutte le funzionalità specifiche di KYAN (Masternodes, Zerocoin) (0-1, default: %u)</translation>
     </message>
     <message>
         <source>Error: Unsupported argument -checklevel found. Checklevel must be level 4.</source>
@@ -5670,10 +5662,6 @@ Portafoglio Kyanite.</translation>
     <message>
         <source>Loading block index...</source>
         <translation>Caricamento indice dei blocchi...</translation>
-    </message>
-    <message>
-        <source>Loading budget cache...</source>
-        <translation>Caricamento cache budget...</translation>
     </message>
     <message>
         <source>Loading masternode cache...</source>
@@ -6080,10 +6068,6 @@ Portafoglio Kyanite.</translation>
     <message>
         <source>Synchronization finished</source>
         <translation>Sincronizzazione finita</translation>
-    </message>
-    <message>
-        <source>Synchronizing budgets...</source>
-        <translation>Sincronizzazione budgets...</translation>
     </message>
     <message>
         <source>Synchronizing masternode winners...</source>
