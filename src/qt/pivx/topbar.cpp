@@ -621,7 +621,6 @@ void TopBar::refreshMasternodeStatus()
             ui->labelNextCollateralBlocks->setText(tr("%1 Blocks").arg(p.first));
         }
     }
-    if (fStaking) std::cout << "Staking enabled" << std::endl;
 }
 
 void TopBar::refreshStatus()
@@ -656,6 +655,8 @@ void TopBar::refreshStatus()
 
     // Collateral
     ui->labelCollateralPiv->setText(GUIUtil::formatBalance(CMasternode::GetMasternodeNodeCollateral(chainActive.Tip()->nHeight), nDisplayUnit));
+
+    if(!fStaking) ui->pushButtonStack->setVisible(false);
 }
 
 void TopBar::updateDisplayUnit()
