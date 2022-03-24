@@ -761,13 +761,10 @@ void TopBar::onError(QString error, int type)
 
 void TopBar::onStakingBtnClicked()
 {
-    if (fStakingActive) {
-        ask("Confirm your choice", "Do you really want to DISABLE staking?\n");
-        fStakingActive = false;
-        return;
+    if(ask(
+        tr("Confirm your choice"), 
+        tr("Do you really want to %1 staking?").arg(fStakingActive ? "DISABLE" : "ENABLE"))
+    ) {
+        fStakingActive ^= true;
     }
-    else {
-        return;
-    }
-
 }
