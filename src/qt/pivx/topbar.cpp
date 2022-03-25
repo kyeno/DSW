@@ -383,7 +383,7 @@ void TopBar::loadClientModel()
 
         timerStakingIcon = new QTimer(ui->pushButtonStack);
         connect(timerStakingIcon, &QTimer::timeout, this, &TopBar::updateStakingStatus);
-        timerStakingIcon->start(50000);
+        timerStakingIcon->start(1000);
         updateStakingStatus();
     }
 }
@@ -391,7 +391,7 @@ void TopBar::loadClientModel()
 void TopBar::setStakingStatusActive(bool fActive)
 {
     if (ui->pushButtonStack->isChecked() != fActive) {
-        ui->pushButtonStack->setButtonText(fActive ? tr("Staking active") : tr("Staking not active"));
+        ui->pushButtonStack->setButtonText(fActive ? tr("Staking active") : tr("Staking inactive"));
         ui->pushButtonStack->setChecked(fActive);
         ui->pushButtonStack->setButtonClassStyle("cssClass", (fActive ? "btn-check-stack" : "btn-check-stack-inactive"), true);
     }

@@ -3858,7 +3858,7 @@ Emin misiniz?
         <translation>Stake etkin</translation>
     </message>
     <message>
-        <source>Staking not active</source>
+        <source>Staking inactive</source>
         <translation>Stake kapalı</translation>
     </message>
     <message>

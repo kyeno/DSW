@@ -117,7 +117,7 @@ UniValue getinfo(const JSONRPCRequest& request)
         obj.push_back(Pair("zerocoinbalance", ValueFromAmount(pwalletMain->GetZerocoinBalance(true))));
         obj.push_back(Pair("staking status", (pwalletMain->pStakerStatus->IsActive() ?
                                                 "Staking Active" :
-                                                "Staking Not Active")));
+                                                "Staking Inactive")));
     }
 #endif
     obj.push_back(Pair("blocks", (int)chainActive.Height()));
