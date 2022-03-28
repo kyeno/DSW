@@ -44,6 +44,7 @@ extern const char * const DEFAULT_DEBUGLOGFILE;
 extern bool fMasterNode;
 extern bool fStaking;
 extern bool fStakingActive;
+extern bool fStakingStatus;
 extern bool fLiteMode;
 extern int64_t enforceMasternodePaymentsTime;
 extern int keysLoaded;
@@ -199,5 +200,7 @@ void TraceThread(const char* name, Callable func)
 }
 
 fs::path AbsPathForConfigVal(const fs::path& path, bool net_specific = true);
+
+std::string GetReadableHashRate(uint64_t hashrate);
 
 #endif // BITCOIN_UTIL_H
