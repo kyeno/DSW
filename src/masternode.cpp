@@ -824,8 +824,6 @@ bool CMasternodePing::CheckAndUpdate(int& nDos, bool fRequireEnabled, bool fChec
        masternodeSync.IsSporkListSynced() &&
        sporkManager.IsSporkActive(SPORK_109_STRICT_MN_PING_TIMINGS)) 
     {
-        std::cout << "================ MNPING ===============" << std::endl;
-
         if (sigTime > GetAdjustedTime() + 5 * 60) {
             LogPrint(BCLog::MNPING, "%s: Signature rejected, too far into the future %s\n", __func__, vin.prevout.ToStringShort());
             nDos = 1;
