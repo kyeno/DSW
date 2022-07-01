@@ -1,14 +1,14 @@
 #!/bin/bash
 
 TMP_FOLDER=$(mktemp -d)
-CONFIG_FILE='__decenomy__.conf'
-CONFIGFOLDER='/root/.__decenomy__'
-COIN_DAEMON='__decenomy__d'
-COIN_CLI='__decenomy__-cli'
+CONFIG_FILE='petrolhead.conf'
+CONFIGFOLDER='/root/.petrolhead'
+COIN_DAEMON='petrolheadd'
+COIN_CLI='petrolhead-cli'
 COIN_PATH='/usr/local/bin/'
 COIN_TGZ=`curl -s https://api.github.com/repos/__GITHUB_ACCOUNT__/__GITHUB_REPOSITORY__/releases/latest | grep "browser_download_url.*Linux\\.zip" | cut -d : -f 2,3 | tr -d \" | xargs`
 COIN_ZIP=$(echo $COIN_TGZ | awk -F'/' '{print $NF}')
-COIN_NAME='__decenomy__'
+COIN_NAME='petrolhead'
 COIN_PORT=__PORT_MAINNET__
 RPC_PORT=__RPCPORT_MAINNET__
 

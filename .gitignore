@@ -9,13 +9,13 @@ reset-files.bash
 *.exe
 
 # DSW
-src/__decenomy__
-src/__decenomy__d
-src/__decenomy__-cli
-src/__decenomy__-tx
-src/bench/bench___decenomy__
-src/test/test___decenomy__
-src/qt/test/test___decenomy__-qt
+src/petrolhead
+src/petrolheadd
+src/petrolhead-cli
+src/petrolhead-tx
+src/bench/bench_petrolhead
+src/test/test_petrolhead
+src/qt/test/test_petrolhead-qt
 
 # Sapphire
 src/bench/bench_sapphire
@@ -257,7 +257,7 @@ src/qt/test/moc*.cpp
 *.o-*
 *.patch
 .pivx
-.__decenomy__
+.petrolhead
 *.a
 *.pb.cc
 *.pb.h
@@ -277,7 +277,7 @@ src/qt/test/moc*.cpp
 *.qm
 Makefile
 pivx-qt
-__decenomy__-qt
+petrolhead-qt
 Jackpot-Qt.app
 background.tiff*
 
@@ -289,7 +289,7 @@ target/
 # Unit-tests
 Makefile.test
 pivx-qt_test
-__decenomy__-qt_test
+petrolhead-qt_test
 src/test/buildenv.py
 
 # Resources cpp
@@ -306,7 +306,7 @@ build
 *.gcno
 /*.info
 test_pivx.coverage/
-test___decenomy__.coverage/
+test_petrolhead.coverage/
 total.coverage/
 coverage_percent.txt
 
@@ -338,9 +338,9 @@ moc_*
 ui_*
 build*
 pivxd.*
-__decenomy__d.*
+petrolheadd.*
 pivxd-new-gui.*
-__decenomy__d-new-gui.*
+petrolheadd-new-gui.*
 
 # for Visual Studio Code
 

@@ -1,6 +1,6 @@
 [Protocol]
-exec=__decenomy__-qt '%u'
-protocol=__decenomy__
+exec=petrolhead-qt '%u'
+protocol=petrolhead
 input=none
 output=none
 helper=true

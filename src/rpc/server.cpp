@@ -266,11 +266,11 @@ UniValue stop(const JSONRPCRequest& jsonRequest)
     if (jsonRequest.fHelp || jsonRequest.params.size() > 1)
         throw std::runtime_error(
             "stop\n"
-            "\nStop __Decenomy__ server.");
+            "\nStop Petrolhead server.");
     // Event loop will exit after current HTTP requests have been handled, so
     // this reply will get back to the client.
     StartShutdown();
-    return "__Decenomy__ server stopping";
+    return "Petrolhead server stopping";
 }
 
 
@@ -359,22 +359,22 @@ static const CRPCCommand vRPCCommands[] =
         { "hidden",             "waitforblock",           &waitforblock,           true },
         { "hidden",             "waitforblockheight",     &waitforblockheight,     true },
 
-        /* __DSW__ features */
-        {"__decenomy__", "listmasternodes", &listmasternodes, true },
-        {"__decenomy__", "getmasternodecount", &getmasternodecount, true },
-        {"__decenomy__", "createmasternodebroadcast", &createmasternodebroadcast, true },
-        {"__decenomy__", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
-        {"__decenomy__", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
-        {"__decenomy__", "masternodecurrent", &masternodecurrent, true },
-        {"__decenomy__", "startmasternode", &startmasternode, true },
-        {"__decenomy__", "createmasternodekey", &createmasternodekey, true },
-        {"__decenomy__", "getmasternodeoutputs", &getmasternodeoutputs, true },
-        {"__decenomy__", "listmasternodeconf", &listmasternodeconf, true },
-        {"__decenomy__", "getmasternodestatus", &getmasternodestatus, true },
-        {"__decenomy__", "getmasternodewinners", &getmasternodewinners, true },
-        {"__decenomy__", "getmasternodescores", &getmasternodescores, true },
-        {"__decenomy__", "mnsync", &mnsync, true },
-        {"__decenomy__", "spork", &spork, true },
+        /* PTLH features */
+        {"petrolhead", "listmasternodes", &listmasternodes, true },
+        {"petrolhead", "getmasternodecount", &getmasternodecount, true },
+        {"petrolhead", "createmasternodebroadcast", &createmasternodebroadcast, true },
+        {"petrolhead", "decodemasternodebroadcast", &decodemasternodebroadcast, true },
+        {"petrolhead", "relaymasternodebroadcast", &relaymasternodebroadcast, true },
+        {"petrolhead", "masternodecurrent", &masternodecurrent, true },
+        {"petrolhead", "startmasternode", &startmasternode, true },
+        {"petrolhead", "createmasternodekey", &createmasternodekey, true },
+        {"petrolhead", "getmasternodeoutputs", &getmasternodeoutputs, true },
+        {"petrolhead", "listmasternodeconf", &listmasternodeconf, true },
+        {"petrolhead", "getmasternodestatus", &getmasternodestatus, true },
+        {"petrolhead", "getmasternodewinners", &getmasternodewinners, true },
+        {"petrolhead", "getmasternodescores", &getmasternodescores, true },
+        {"petrolhead", "mnsync", &mnsync, true },
+        {"petrolhead", "spork", &spork, true },
 
 #ifdef ENABLE_WALLET
         /* Wallet */
@@ -572,7 +572,7 @@ std::vector<std::string> CRPCTable::listCommands() const
 
 std::string HelpExampleCli(std::string methodname, std::string args)
 {
-    return "> __decenomy__-cli " + methodname + " " + args + "\n";
+    return "> petrolhead-cli " + methodname + " " + args + "\n";
 }
 
 std::string HelpExampleRpc(std::string methodname, std::string args)

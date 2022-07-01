@@ -3,9 +3,9 @@ pipeline {
     agent any
 
     environment {
-        NAME = '__Decenomy__'
-        BASE_NAME = '__decenomy__'
-        ZIP_NAME = '__DSW__'
+        NAME = 'Petrolhead'
+        BASE_NAME = 'petrolhead'
+        ZIP_NAME = 'PTLH'
     }
 
     stages {
