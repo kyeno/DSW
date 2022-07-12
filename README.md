@@ -6,7 +6,8 @@ DECENOMY Standard wallet repository
 
 ### Coin Specs
 
-• PoW Algorithm: X11KVS
+• MN Collateral: 7,500 PTLH
+• PoW Algorithm: QUARK
 • Premine: 1,000,000,000 PTLH
 • PoW Blocks: 1 - 1000
 • PoS Blocks: Starting from 1001
