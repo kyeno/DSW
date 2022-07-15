@@ -373,7 +373,7 @@ CAmount CMasternode::GetBlockValue(int nHeight)
     CAmount nSubsidy;
 
     // Static, non-inflatory scheme for PTLH coin
-    if (nHeight == 1) nSubsidy = 9999999999 * COIN;
+    if (nHeight == 1) nSubsidy = 100000 * COIN;     // Premine
     else nSubsidy = 100 * COIN;
 
     if(nMoneySupply + nSubsidy > maxMoneyOut) {
