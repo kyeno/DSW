@@ -33,7 +33,6 @@
 #include "spork.h"
 #include "policy/policy.h"
 
-
 #include <boost/thread.hpp>
 #include <boost/tuple/tuple.hpp>
 
@@ -188,10 +187,10 @@ CBlockTemplate* CreateNewBlock(const CScript& scriptPubKeyIn, CWallet* pwallet, 
     unsigned int nBlockMaxSizeSpork = (unsigned int)sporkManager.GetSporkValue(SPORK_105_MAX_BLOCK_SIZE);
 
     nBlockMaxSize = std::max(
-        (unsigned int)1000, 
-        std::min( 
-            nBlockMaxSizeSpork, 
-            nBlockMaxSize 
+        (unsigned int)1000,
+        std::min(
+            nBlockMaxSizeSpork,
+            nBlockMaxSize
         )
     );
 
